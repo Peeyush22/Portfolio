@@ -12,7 +12,7 @@
            // Send email
          emailjs.send('service_1sijuz9', 'template_0lorufc', data)
          .then(function(response){
-           
+          document.getElementById("form").reset();  
           alert("Message sent sucessfully...thankyou for reaching out!!" , response.status) ;
           }, function(error){
             alert("Message could not deliver!!" , error) ;
